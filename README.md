@@ -20,6 +20,7 @@ An example of the original function printf and ft_printf:
 `main:`
 
 <img src="https://i.ibb.co/JCtz9BJ/2022-01-10-17-24-15.png" alt="2022-01-10-17-24-15" border="0">
+
 `result:`
 
 <img src="https://i.ibb.co/Dggdvz6/2022-01-10-17-30-01.png" alt="2022-01-10-17-30-01" border="0">
