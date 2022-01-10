@@ -17,5 +17,5 @@ In addition to data types, the following must be processed:
 The program should return the length of the string that turned out after all data types have been processed
 ***
 An example of the original function printf and ft_printf:
-![screenshot of sample](https://ibb.co/vDqJSwn)
+<img src="https://i.ibb.co/JCtz9BJ/2022-01-10-17-24-15.png" alt="2022-01-10-17-24-15" border="0">
 
