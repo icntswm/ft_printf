@@ -6,6 +6,7 @@ Not all of the print function toolkit should be implemented, but only some of it
 What needs to be implemented:
 > handling integer data type(`%d`, `%i`), string(`%s`), character(`%c`), pointer(`%p`),
 > unsigned integer(`%y`), hexadecimal element(`%x`, `%X`), as well as percent(`%%`).
+> The resulting program must be archived and placed in the libftprintf.a library.
 
 In addition to data types, the following must be processed:
 * width (example: `%5d`)
@@ -14,4 +15,7 @@ In addition to data types, the following must be processed:
 * flag 0 (example: `%05d`)
 ***
 The program should return the length of the string that turned out after all data types have been processed
+***
+An example of the original function printf and ft_printf:
+
 
