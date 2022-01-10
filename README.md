@@ -8,7 +8,7 @@ What needs to be implemented:
 > unsigned integer(`%y`), hexadecimal element(`%x`, `%X`), as well as percent(`%%`).
 
 In addition to data types, the following must be processed:
-* width (example: %`5`d)
+* width (example: `%**5**d`)
 * accuracy (example: %5`.4`d)
 * left alignment (example: %`-`5d)
 * flag 0 (example: %`0`5d)
