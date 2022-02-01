@@ -14,12 +14,7 @@ void	u_hdot_hprecision(t_print *struc, t_output *output, int len_str)
 		if ((*struc).width > len_str && (*struc).zero == 0)
 			output->sum_space = (*struc).width - len_str;
 		else if ((*struc).width > len_str && (*struc).zero == 1)
-		{
-			if ((*output).num_f_u < 0)
-				output->sum_zero = (*struc).width - len_str - 1;
-			else
-				output->sum_zero = (*struc).width - len_str;
-		}
+			output->sum_zero = (*struc).width - len_str;
 	}
 }
 
@@ -35,12 +30,7 @@ void	u_width_more_precision(t_print *struc, t_output *output, int len_str)
 			output->sum_space = (*struc).width - len_str;
 	}
 	else if ((*struc).dot == 0 && (*struc).zero == 1)
-	{
-		if ((*output).num_f_u < 0)
-			output->sum_zero = (*struc).width - len_str - 1;
-		else
-			output->sum_zero = (*struc).width - len_str;
-	}
+		output->sum_zero = (*struc).width - len_str;
 	else if ((*struc).dot == 0 && (*struc).zero == 0)
 		output->sum_space = (*struc).width - len_str;
 }

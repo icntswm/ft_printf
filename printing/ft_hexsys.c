@@ -4,7 +4,7 @@ void	ft_hexsys_upper(unsigned long long n, int fd, t_print *struc)
 {
 	if (n > 15)
 		ft_hexsys_upper(n / 16, fd, &(*struc));
-	if ((n % 16) >= 0 && (n % 16) <= 9)
+	if (n % 16 <= 9)
 		ft_putchar_sc_fd('0' + (n % 16), fd, &(*struc));
 	if ((n % 16) == 10)
 		ft_putchar_sc_fd('A', fd, &(*struc));
@@ -24,7 +24,7 @@ void	ft_hexsys_lower(unsigned long long n, int fd, t_print *struc)
 {
 	if (n > 15)
 		ft_hexsys_lower(n / 16, fd, &(*struc));
-	if ((n % 16) >= 0 && (n % 16) <= 9)
+	if (n % 16 <= 9)
 		ft_putchar_sc_fd('0' + (n % 16), fd, &(*struc));
 	if ((n % 16) == 10)
 		ft_putchar_sc_fd('a', fd, &(*struc));

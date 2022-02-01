@@ -7,7 +7,7 @@ int	ft_hexcounter(unsigned long long n, int fd)
 	sum = 0;
 	if (n > 15)
 		ft_hexcounter(n / 16, fd);
-	if ((n % 16) >= 0 && (n % 16) <= 9)
+	if (n % 16 <= 9)
 		sum++;
 	if ((n % 16) == 10)
 		sum++;

@@ -32,8 +32,8 @@ RM		=	rm -f
 CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror
 
-.c.o:
-			${CC} ${CFLAGS} -c $< -I ${LB_HEAD} -I ${PR_HEAD} -o $@
+.c.o:		${PR_HEAD}
+			${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}
 			make -C ${LIBFT}
